@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".fragment.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".ViewPagerActivity" />
+        <activity
+            android:name=".ActivityA"
+            android:launchMode="singleInstance" />
+        <activity android:name=".ScaleTypeActivity" />
+        <activity android:name=".ninePatchActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".AdvanceListViewActivity" />
+        <activity
+            android:name=".AActivity"
+            android:launchMode="standard" />
+        <activity android:name=".BActivity"></activity>
     </application>
 
 </manifest>
