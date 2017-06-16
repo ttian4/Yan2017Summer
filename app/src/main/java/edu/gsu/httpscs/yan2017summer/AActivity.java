@@ -13,18 +13,25 @@ import butterknife.OnClick;
 public class AActivity extends BaseActivity {
 
     private Intent intent;
-    @OnClick(R.id.activity_B)
-    public void changeToB(){
-        changeActivity();
+    @OnClick(R.id.activity_launch_mode_buttonA)
+    public void changeToA(){
+        Button bt = (Button) findViewById(R.id.activity_launch_mode_buttonA);
+        changeActivity(bt,AActivity.class);
     }
-    public void changeActivity() {
+    @OnClick(R.id.activity_launch_mode_buttonB)
+    public void changeToB(){
         Button bt = (Button) findViewById(R.id.activity_launch_mode_buttonB);
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AActivity.this, BActivity.class));
-            }
-        });
+        changeActivity(bt,BActivity.class);
+    }
+    @OnClick(R.id.activity_launch_mode_buttonC)
+    public void changeToC(){
+        Button bt = (Button) findViewById(R.id.activity_launch_mode_buttonC);
+        changeActivity(bt,CActivity.class);
+    }
+    @OnClick(R.id.activity_launch_mode_buttonD)
+    public void changeToD(){
+        Button bt = (Button) findViewById(R.id.activity_launch_mode_buttonD);
+        changeActivity(bt,DActivity.class);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

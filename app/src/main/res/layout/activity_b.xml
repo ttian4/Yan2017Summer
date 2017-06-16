@@ -15,7 +15,7 @@
         android:orientation="horizontal"
         android:background="@android:color/white">
         <Button
-            android:id="@+id/activity_launch_mode_A"
+            android:id="@+id/activity_launch_mode_buttonA"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="20"
@@ -28,6 +28,7 @@
             android:textColor="@android:color/white"
             />
         <Button
+            android:id="@+id/activity_launch_mode_buttonB"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="20"
@@ -40,6 +41,7 @@
             android:textColor="@android:color/white"
             />
         <Button
+            android:id="@+id/activity_launch_mode_buttonC"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="20"
@@ -52,6 +54,7 @@
             android:textColor="@android:color/white"
             />
         <Button
+            android:id="@+id/activity_launch_mode_buttonD"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="20"

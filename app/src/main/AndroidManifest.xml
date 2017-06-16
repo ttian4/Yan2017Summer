@@ -21,9 +21,6 @@
             android:label="@string/title_activity_view_pager"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".ViewPagerActivity" />
-        <activity
-            android:name=".ActivityA"
-            android:launchMode="singleInstance" />
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".ninePatchActivity" />
         <activity android:name=".NotificationActivity" />
@@ -31,7 +28,13 @@
         <activity
             android:name=".AActivity"
             android:launchMode="standard" />
-        <activity android:name=".BActivity"></activity>
+        <activity android:name=".BActivity"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".CActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".DActivity"
+            android:launchMode="singleInstance"></activity>
     </application>
 
 </manifest>

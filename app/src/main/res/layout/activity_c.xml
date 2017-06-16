@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/activity_A"
-    tools:context="edu.gsu.httpscs.yan2017summer.AActivity">
+    tools:context="edu.gsu.httpscs.yan2017summer.CActivity">
 
     <LinearLayout
         android:id="@+id/activity_launch_mode_tool"
@@ -71,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/activity_launch_mode_tool"
-        android:text="A"
+        android:text="C"
         android:textColor="@android:color/black"
         android:textSize="250sp"
         android:gravity="center"

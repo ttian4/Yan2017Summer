@@ -12,7 +12,16 @@ import android.widget.Toast;
  */
 
 public class BaseActivity extends AppCompatActivity {
-    public void showToast(String s){
-        Toast.makeText(this,s,Toast.LENGTH_SHORT).show();
+    public void showToast(String s) {
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+    }
+
+    public void changeActivity(Button bt, final Class<? extends Activity> newAct) {
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BaseActivity.this, newAct));
+            }
+        });
     }
 }

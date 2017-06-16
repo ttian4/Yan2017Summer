@@ -8,7 +8,7 @@ import android.widget.Button;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class BActivity extends BaseActivity {
+public class DActivity extends BaseActivity {
     private Intent intent;
     @OnClick(R.id.activity_launch_mode_buttonA)
     public void changeToA(){
@@ -33,7 +33,7 @@ public class BActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b);
+        setContentView(R.layout.activity_d);
         ButterKnife.bind(this);
         showToast("OnCreate");
     }
